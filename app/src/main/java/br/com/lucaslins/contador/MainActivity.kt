@@ -35,13 +35,13 @@ class MainActivity : AppCompatActivity() {
         fun atualizarContador() {
             contadorTextView.text = contador.toString()
         }
-        // Botão para aumentar
+        // Botão para aumentar de um em um
         aumentarButton.setOnClickListener {
             contador++
             atualizarContador()
         }
 
-        // Botão para diminuir
+        // Botão para diminuir de um em um, travando em zero
         diminuirButton.setOnClickListener {
             if (contador > 0) { // Solicitado que o contador não fique negativo
                 contador--
