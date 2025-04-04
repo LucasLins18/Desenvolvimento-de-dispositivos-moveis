@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
-    //Variável do contador
+    //Variável do contador.
     private var contador = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
