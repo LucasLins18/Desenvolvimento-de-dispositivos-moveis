@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     // Início da área de funcionamento dos botões e visor
 
-        // Referêmcia ao visor e botão
+        // Referência ao visor e botão
         val contadorTextView = findViewById<TextView>(R.id.contadorTextView)
         val aumentarButton = findViewById<Button>(R.id.aumentarButton)
         val diminuirButton = findViewById<Button>(R.id.diminuirButton)
@@ -35,13 +35,13 @@ class MainActivity : AppCompatActivity() {
         fun atualizarContador() {
             contadorTextView.text = contador.toString()
         }
-        // Botão para aumentar de um em um
+        // Botão para aumentar o valor em um a cada clique
         aumentarButton.setOnClickListener {
             contador++
             atualizarContador()
         }
 
-        // Botão para diminuir de um em um, travando em zero
+        // Botão para diminuir o valor em um a cada clique, travando em zero
         diminuirButton.setOnClickListener {
             if (contador > 0) { // Solicitado que o contador não fique negativo
                 contador--
