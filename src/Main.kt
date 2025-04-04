@@ -15,7 +15,7 @@ fun main() {
 
         when (scanner.nextInt()) {
             1 -> {
-                print("Digite valor para depósito: ")
+                print("Digite valor para depósito; ")
                 val valor = scanner.nextDouble()
                 if (valor > 0) {
                     saldo += valor
