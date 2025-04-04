@@ -25,7 +25,7 @@ fun main() {
                 }
             }
             2 -> {
-                print("Digite o valor para saque: ")
+                print("Digite valor para saque: ")
                 val valor = scanner.nextDouble()
                 if (valor > 0) {
                     if (valor <= saldo) {
